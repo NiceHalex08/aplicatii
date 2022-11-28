@@ -8,7 +8,7 @@ const Cards = () => {
     // { name: '2', count: 0 },
     // { name: '3', count: 0 },
     // { name: '4', count: 0 },
-    // { name: '5', count: 0 },
+    // { name: '5', count: 0 },dawdaw
     // { name: '6', count: 0 },
     // { name: '7', count: 0 },
     // { name: '8', count: 0 },
@@ -49,15 +49,15 @@ const Cards = () => {
     setCards(cards.filter((cards) => cards.id !== id));
   };
   return (
-    <div className='objcontent'>
-      <div className='btnArea'>
-        <button className='btn' onClick={() => addCard()}>
+    <div className="objcontent">
+      <div className="btnArea">
+        <button className="btn" onClick={() => addCard()}>
           Add card
         </button>
       </div>
-      <div className='cardsArea'>
+      <div className="cardsArea">
         {cards.map((elem) => (
-          <div className='obj'>
+          <div className="obj">
             <p>name:{elem.name}</p>
             <p>count:{elem.count}</p>
             <button onClick={() => update1(elem.id)}>+</button>
