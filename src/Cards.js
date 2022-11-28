@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import './App.css';
 import { v4 as uuidv4 } from 'uuid';
+import Card from './Card';
 const Cards = () => {
   const [cards, setCards] = useState([
     { id: 1, name: '1', count: 0 },
@@ -49,21 +50,20 @@ const Cards = () => {
     setCards(cards.filter((cards) => cards.id !== id));
   };
   return (
-    <div className="objcontent">
-      <div className="btnArea">
-        <button className="btn" onClick={() => addCard()}>
+    <div className='objcontent'>
+      <div className='btnArea'>
+        <button className='btn' onClick={() => addCard()}>
           Add card
         </button>
       </div>
-      <div className="cardsArea">
-        {cards.map((elem) => (
-          <div className="obj">
-            <p>name:{elem.name}</p>
-            <p>count:{elem.count}</p>
-            <button onClick={() => update1(elem.id)}>+</button>
-            <button onClick={() => handleMinus(elem.id)}>-</button>
-            <button onClick={() => deleteCards(elem.id)}>Delete card</button>
-          </div>
+      <div className='cardsArea'>
+        {cards.map((element) => (
+          <Card
+            element={element}
+            update1={update1}
+            handleMinus={handleMinus}
+            deleteCards={deleteCards}
+          ></Card>
         ))}
       </div>
     </div>
