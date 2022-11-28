@@ -1,0 +1,73 @@
+/* .sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 50px;
+  font-size: 20px;
+} */
+.Sidebar {
+  float: left;
+  background-color: #eff1ed;
+  width: 15%;
+}
+.center {
+  overflow: auto;
+  height: 100%;
+  display: flex;
+}
+.main {
+  float: right;
+  background-color: #717744;
+  width: 85%;
+  overflow: auto;
+}
+
+.objcontent {
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.obj {
+  background-color: #eff1ed;
+  width: 150px;
+  border-style: solid;
+  border-color: #bcbd8b;
+  height: 300px;
+  padding-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.header {
+  background-color: #bcbd8b;
+  height: 100px;
+}
+.footer {
+  background-color: #373d20;
+  height: 100px;
+}
+.btnArea {
+  height: 10%;
+  width: 100%;
+}
+.cardsArea {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.sideButton {
+  margin-top: 10%;
+  text-align: center;
+  background-color: #0a0a23;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  min-height: 30px;
+  min-width: 120px;
+}
+.sideButton:hover {
+  background-color: #00d9ff;
+}
+
