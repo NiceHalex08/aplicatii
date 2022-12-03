@@ -1,6 +1,6 @@
 import Cards from './Cards';
 import './App.css';
-import Sidebar from './Sidebar';
+import Header from './Header';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Pag1 from './Pag1';
 import Aplic from './Aplic';

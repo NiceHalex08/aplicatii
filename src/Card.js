@@ -4,7 +4,7 @@ const Card = (props) => {
   const { element, update1, handleMinus, deleteCards } = props;
   useEffect(() => {
     console.log('Salut');
-  }, []);
+  }, [handleMinus]);
 
   return (
     <div className='obj'>
