@@ -36,6 +36,7 @@ const Aplic = () => {
   };
   const deleteCards = (id) => {
     setCards(cards.filter((cards) => cards.id !== id));
+    alert('Are you sure you want to delete?');
   };
   return (
     <div>
